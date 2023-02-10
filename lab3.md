@@ -11,9 +11,6 @@ written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        The main or Great C
 
 In this example, the pattern that is being search are five digit numbers with the first and second digit separated by a comma. There is only one matching number in this path `written_2/travel_guides/berlitz1` that is 1,1312. This is useful becasue someone can use this to, for example, search for all the phone numbers in a bunch of documents. 
 
-**Reference**
-https://chat.openai.com
-
 **Example 2**
 
 ```
@@ -50,9 +47,6 @@ written_2/travel_guides/berlitz1/WhereToItaly.txt:3044:        church is a high 
 
 The command is trying to search "Flamboyant" in the path written_2/travel_guides/berlitz1. As can been seen in the results, in addition to the line and the file path, the line number where the word appears is shown. This is useful since if the document is long, one can quickly locate the line they want to read and skip to there. 
 
-**Reference**
-https://chat.openai.com
-
 **Example 4**
 ```
 [cs15lwi23ajj@ieng6-202]:skill-demo1-data:328$ grep -n "1350" written_2/travel_guides/berlitz1/*.txt
@@ -60,12 +54,11 @@ written_2/travel_guides/berlitz1/WhereToEgypt.txt:535:        c.1350 b.c. , and 
 ```
 The command is trying to search the number 1350 in the path `written_2/travel_guides/berlitz1`. As can been seen in the results, it appears in line 535 at `written_2/travel_guides/berlitz1/WhereToEgypt.txt`. This is useful since the user might need the line number for secondary processing with the file, like deleting a line. 
 
+**Reference**
+https://chat.openai.com
 
 ## Command 3: `grep -C number "word" filename.txt`
 This command shows the context near the searched lines. Specifically, it shows the input number of lines above and below the line containing target word.
-
-**Reference**
-https://chat.openai.com
 
 **Example 5**
 ```
@@ -78,8 +71,6 @@ written_2/travel_guides/berlitz1/WhereToEgypt.txt-        the God Amun who would
 ```
 The command is trying to search for the number 1350 in `written_2/travel_guides/berlitz1/*.txt` and show two lines above and below the line containing the number. This can also be seen in the results that there are in total five lines and the line with 1350 is in the middle. This is useful because someone might want to get the information in the article that contains the word they want to search and one line may given enough information. 
 
-**Reference**
-https://chat.openai.com
 
 **Example 6**
 ```
@@ -114,10 +105,6 @@ This command search for lines that do not contains the word in the txt file.
         ✪✪✪more than 8,000 ptas.
 ```
 This command searched for all the lines(including blank lines) that does not have the word "the". This is useful because the user might not to read the word they find repellent. 
-
-**Reference**
-https://chat.openai.com
-
 
 **Example 8**
 ```
