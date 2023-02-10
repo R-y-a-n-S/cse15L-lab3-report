@@ -66,11 +66,13 @@ written_2/travel_guides/berlitz1/WhereToEgypt.txt-        the God Amun who would
 ```
 The command is trying to search for the number 1350 in `written_2/travel_guides/berlitz1/*.txt` and show two lines above and below the line containing the number. This can also be seen in the results that there are in total five lines and the line with 1350 is in the middle. This is useful because someone might want to get the information in the article that contains the word they want to search and one line may given enough information. 
 
-** Example 6**
+**Example 6**
 ```
 [cs15lwi23ajj@ieng6-202]:skill-demo1-data:333$ grep -C 1 "1,1312" written_2/travel_guides/berlitz1/*.txt
 written_2/travel_guides/berlitz1/WhereToMalaysia.txt-        nests and hornbill ivory for Chinese porcelain and beads.
 written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        The main or Great Cave is a hollow 400 m (1,1312 ft) up in
 written_2/travel_guides/berlitz1/WhereToMalaysia.txt-        the sandstone Subis plateau. Besides some giant crickets and scorpions 
 ```
-The command is trying to search for the number 1,1312 in `written_2/travel_guides/berlitz1/*.txt` and show oneove and below the line containing the number.
+The command is trying to search for the number 1,1312 in `written_2/travel_guides/berlitz1/*.txt` and show one line above and below the line containing the number. This is also useful because the number of line customizable. If the user feels that there isn't enough information, they could enlarge the context. Some users might not line to read a long paragraph so they only shows one line above and below, like this example. 
+
+## Command 4: 
